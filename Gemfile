@@ -28,4 +28,6 @@ gem 'spree_auth_devise',
   :git => 'http://github.com/spree/spree_auth_devise.git', 
   :branch => '2-1-stable'
 
-
+gem 'spree_mailchimp_gibbon', 
+  :git => 'https://github.com/think602/spree_mailchimp_gibbon', 
+  :branch => '2-1-stable'

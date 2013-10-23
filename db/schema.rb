@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131023210397) do
+ActiveRecord::Schema.define(version: 20131023211212) do
 
   create_table "spree_activators", force: true do |t|
     t.string   "description"
@@ -611,15 +611,15 @@ ActiveRecord::Schema.define(version: 20131023210397) do
   end
 
   create_table "spree_users", force: true do |t|
-    t.string   "encrypted_password",     limit: 128
-    t.string   "password_salt",          limit: 128
+    t.string   "encrypted_password",      limit: 128
+    t.string   "password_salt",           limit: 128
     t.string   "email"
     t.string   "remember_token"
     t.string   "persistence_token"
     t.string   "reset_password_token"
     t.string   "perishable_token"
-    t.integer  "sign_in_count",                      default: 0, null: false
-    t.integer  "failed_attempts",                    default: 0, null: false
+    t.integer  "sign_in_count",                       default: 0,     null: false
+    t.integer  "failed_attempts",                     default: 0,     null: false
     t.datetime "last_request_at"
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
@@ -635,6 +635,8 @@ ActiveRecord::Schema.define(version: 20131023210397) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.datetime "remember_created_at"
+    t.boolean  "is_mail_list_subscriber",             default: false, null: false
+    t.string   "mailchimp_subscriber_id"
   end
 
   add_index "spree_users", ["email"], name: "email_idx_unique", unique: true
