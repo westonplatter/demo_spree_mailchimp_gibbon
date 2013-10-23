@@ -20,7 +20,12 @@ gem 'spree_backend',
   :git => 'https://github.com/spree/spree', 
   :branch => '2-1-stable'
 
+gem 'spree_sample', 
+  :git => 'https://github.com/spree/spree', 
+  :branch => '2-1-stable'
+  
 gem 'spree_auth_devise', 
   :git => 'http://github.com/spree/spree_auth_devise.git', 
   :branch => '2-1-stable'
+
 
