@@ -16,6 +16,13 @@ GIT
   revision: ac7a1dabce8d23c71c072beedbaa25f438a7502b
   branch: 2-1-stable
   specs:
+    spree (2.1.3.beta)
+      spree_api (= 2.1.3.beta)
+      spree_backend (= 2.1.3.beta)
+      spree_cmd (= 2.1.3.beta)
+      spree_core (= 2.1.3.beta)
+      spree_frontend (= 2.1.3.beta)
+      spree_sample (= 2.1.3.beta)
     spree_api (2.1.3.beta)
       rabl (= 0.8.4)
       spree_core (= 2.1.3.beta)
@@ -26,6 +33,8 @@ GIT
       select2-rails (~> 3.4.7)
       spree_api (= 2.1.3.beta)
       spree_core (= 2.1.3.beta)
+    spree_cmd (2.1.3.beta)
+      thor (~> 0.14)
     spree_core (2.1.3.beta)
       activemerchant (= 1.40.0)
       acts_as_list (= 0.2.0)
@@ -259,12 +268,9 @@ DEPENDENCIES
   jquery-rails
   rails (= 4.0.0)
   sass-rails (~> 4.0.0)
+  spree!
   spree_auth_devise!
-  spree_backend!
-  spree_core!
-  spree_frontend!
   spree_mailchimp_gibbon!
-  spree_sample!
   sqlite3
   turbolinks
   uglifier (>= 1.3.0)
